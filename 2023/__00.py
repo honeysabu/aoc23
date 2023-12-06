@@ -3,7 +3,7 @@ from aocd import get_data
 
 def part1(data):
     input = [s for s in data.split("\n")]
-    print(input)
+
     return len(input)
 
 
@@ -14,7 +14,7 @@ def part2(data):
 
 
 def test_part1():
-    assert part1(test_data) == 142
+    assert part1(test_data) == 150
 
 
 def test_part2():
@@ -26,7 +26,9 @@ data = get_data(day=1, year=2023)
 print(part1(data))
 print(part2(data))
 
-test_data = """1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet"""
+test_data = """forward 5
+down 5
+forward 8
+up 3
+down 8
+forward 2"""
